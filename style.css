@@ -38,6 +38,7 @@ header h1{
 header h3{
 	max-width: 900px;
 	line-height: 2;
+	margin: 0 auto;
 	color: white;
 	-webkit-user-select: none; /* Chrome/Safari */        
 	-moz-user-select: none; /* Firefox */
