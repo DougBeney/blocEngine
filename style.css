@@ -36,6 +36,8 @@ header h1{
 	margin-bottom: 0;
 }
 header h3{
+	max-width: 900px;
+	line-height: 2;
 	color: white;
 	-webkit-user-select: none; /* Chrome/Safari */        
 	-moz-user-select: none; /* Firefox */
