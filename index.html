@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>blocEngine</title>
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>blocEngine</h1>
+<h3><strong>Controls:</strong> WASD to move. (+ & -) to zoom.</h3>
+</header>
+
+<canvas class="gamescreen" width="1280" height="720"></canvas>
+
+
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/674044/exoro.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/world.js"></script>
+<script type="text/javascript" src="js/blockTypes.js"></script>
+<script type="text/javascript" src="js/listener.js"></script>
+
+<script type="text/javascript">
+	
+	$(function(){
+		var game = $('.gamescreen');
+
+		var cur_game_width = game.width();
+		var cur_game_height = game.height();
+
+		var last_game_width = game.width();
+		var last_game_height = game.height();
+
+
+		resize();
+
+		$(window).resize(function() {
+			resize();
+		});
+
+		function resize(){
+			var window_width = $(window).width();
+			var window_height = $(window).height()-$('header').height();
+			
+
+			var ratio = cur_game_height/cur_game_width;
+
+			if(window_width*ratio > window_height){
+				game.css('width', window_height / ratio);
+				game.css('height', window_height);
+
+				
+
+
+
+			}else{
+
+				if(window_height / ratio > window_width){
+					console.log('cum');
+					game.css('width', window_width);
+					game.css('height', window_width*ratio);
+				}else{
+					game.css('width', window_width);
+					game.css('height', window_height);
+				}
+				console.log('organge');
+
+
+				
+			}
+
+			last_game_width = game.width();
+			last_game_height = game.height();
+		}
+
+	});
+
+</script>
+
+</body>
+</html>

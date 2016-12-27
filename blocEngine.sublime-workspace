@@ -1,0 +1,673 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"add_submenu",
+				"add_submenu_page\tWP Function"
+			],
+			[
+				"add_sub",
+				"add_submenu_page\tWP Function"
+			],
+			[
+				"return",
+				"returnThing"
+			],
+			[
+				"have",
+				"have_posts"
+			],
+			[
+				"wp_list",
+				"wp_list_comments"
+			],
+			[
+				"comments",
+				"comments_template"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Ra1n.io",
+					""
+				],
+				[
+					"Packages/User/Node.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Start a Harp Server.sublime-build",
+					""
+				]
+			],
+			[
+				"Ra1n.io",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 225.0,
+		"last_filter": "ftp up",
+		"selected_items":
+		[
+			[
+				"ftp up",
+				"SFTP: Upload File"
+			],
+			[
+				"ftp ",
+				"SFTP: Upload File"
+			],
+			[
+				"shell",
+				"ShellCommand"
+			],
+			[
+				"ftp u",
+				"SFTP: Upload File"
+			],
+			[
+				"bor",
+				"Borat Ipsum"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"git commi",
+				"Git: Commit"
+			],
+			[
+				"git a",
+				"Git: Add All"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git in",
+				"Git: Init"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"shell ",
+				"ShellCommand"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"vagrant ",
+				"Vagrant: Init"
+			],
+			[
+				"sftp up",
+				"SFTP: Upload File"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"sftp br",
+				"SFTP: Browse Server…"
+			],
+			[
+				"sftp ",
+				"SFTP: Edit Server…"
+			],
+			[
+				"",
+				"Bower: Install"
+			],
+			[
+				"sftp ed",
+				"SFTP: Edit Server…"
+			],
+			[
+				"browse",
+				"SFTP: Browse Server…"
+			],
+			[
+				"shel",
+				"ShellCommand"
+			],
+			[
+				"npm install and ",
+				"npm: Install and Save Package"
+			],
+			[
+				"bower",
+				"Bower: Install"
+			],
+			[
+				"bower insta",
+				"Bower: Install"
+			],
+			[
+				"install and ",
+				"npm: Install and Save Development Package"
+			],
+			[
+				"npm",
+				"npm: Install and Save Package"
+			],
+			[
+				"npm remove",
+				"npm: Remove/Uninstall Saved Package"
+			],
+			[
+				"npm install",
+				"npm: Install and Save Package"
+			],
+			[
+				"npm install an",
+				"npm: Install and Save Package"
+			],
+			[
+				"npm install and",
+				"npm: Install and Save Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"s",
+				"ShellCommand"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"npm remo",
+				"npm: Remove/Uninstall Saved Package"
+			],
+			[
+				"project manager",
+				"Project Manager: Add Project"
+			],
+			[
+				"projec",
+				"Project Manager"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"termin",
+				"Terminal: Open"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"terminal",
+				"Terminal: Open in project folder"
+			],
+			[
+				"glue",
+				"Glue - Launch"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"borat",
+				"Borat Ipsum"
+			],
+			[
+				"termina",
+				"Terminality: Browse Commands..."
+			],
+			[
+				"term",
+				"Open in terminal"
+			],
+			[
+				"boxy",
+				"Boxy Theme: Activation"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 115.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/dougbeney/Desktop/Coding/Games/blockEngine"
+	],
+	"file_history":
+	[
+		"/Users/dougbeney/Desktop/Coding/Games/The-Rise-of-Jonesport/index.html",
+		"/Users/dougbeney/Desktop/Coding/Websites/doug-beney/Doug-Beney/functions.php",
+		"/Users/dougbeney/Downloads/Sonic Academy - KICK 2 v1.0.4 macOS [R2R][dada]/KICK 2 v1.0.4/KICK2.KEYFILE",
+		"/Users/dougbeney/Downloads/Sonic Academy - KICK 2 v1.0.4 macOS [R2R][dada]/KICK 2 v1.0.4/R2R.txt",
+		"/Users/dougbeney/Desktop/Music Production/Samples/Black Octopus/Sylenth1 Commercial Electro House/Readme_Credits_LicenseAgreement.txt",
+		"/Users/dougbeney/Documents/Simplicity/bin/lib.simplib",
+		"/Users/dougbeney/Documents/Transmition/Native Instruments - Kontakt 5 v5.6.0 UNLOCKED FiXED OS X [dada]/Kontakt 5 v5.6.0 FiXED/Instructions.txt",
+		"/Users/dougbeney/Desktop/Coding/Websites/midi-lifestyle/floemedia-lifestyle-network/header.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/midi-lifestyle/floemedia-lifestyle-network-child/style.sass",
+		"/Users/dougbeney/Desktop/Coding/Websites/midi-lifestyle/floemedia-lifestyle-network-child/style.css",
+		"/Users/dougbeney/Desktop/Coding/Websites/midi-lifestyle/floemedia-lifestyle-network/style.sass",
+		"/Users/dougbeney/Desktop/Coding/Websites/midi-lifestyle/index.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/readme.txt",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/README.md",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/header.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/inc/follower-count.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/style.sass",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/page.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/full-width.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/template-parts/loop-content-2column.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/template-parts/loop-content.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/template-parts/archive-template.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/template-parts/content-page.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/template-parts/content-search.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/template-parts/content.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/index.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/style.css",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/functions.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/single.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/archive.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/sidebar.php",
+		"/Users/dougbeney/Desktop/test.html",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/inc/jetpack.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/footer.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/search.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/screenshot.png",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/comments.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/index_OLD.php",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/bower_components/floemedia/js/main.js",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/library/images/apple-touch-icon.png",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/library/js/libs/modernizr.custom.min.js",
+		"/Users/dougbeney/Desktop/Coding/Websites/floemedia-lifestyle-network/wp-content/themes/floemedia-lifestyle-network/library/scss/style.scss",
+		"/Users/dougbeney/Desktop/Coding/Websites/FloeMedia Lifestyle Network/Vagrantfile",
+		"/Users/dougbeney/Desktop/Coding/Websites/LifestyleNetwork Theme/index.html",
+		"/Users/dougbeney/Desktop/Coding/Websites/LifestyleNetwork Theme/Vagrantfile",
+		"/Users/dougbeney/Desktop/Coding/Websites/LifestyleNetwork Theme/LifestyleNetwork Theme.sublime-project",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/pokemon-go-sensei/index.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/pokemon-go-sensei/single.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/pokemon-go-sensei/style.css",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/pokemon-go-sensei/footer.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/pokemon-go-sensei/header.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/up-down-left-right/functions.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/pokemon-go-sensei/functions.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/up-down-left-right/header.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Course-DIYMIDIController/sftp-config.json",
+		"/Users/dougbeney/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/Ajenti Server",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/up-down-left-right/style.css",
+		"/Users/dougbeney/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/Pokemon Go Sensei",
+		"/Users/dougbeney/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/DIY MIDI Controller",
+		"/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/sublime-sftp-browse-1477169553/Pokemon Go Sensei/var/www/html/wp-config.php",
+		"/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/sublime-sftp-browse-1477170138/Pokemon Go Sensei/var/www/html/wp-content/debug.log",
+		"/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/sublime-sftp-browse-1477169984/Pokemon Go Sensei/var/www/html/wp-includes/functions.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/pokemon-go-sensei/home-page-template.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/pokemon-go-sensei/full-width-template.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/pokemon-go-sensei/page.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/pokemon-go-sensei/_/parts/loop.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/pokemon-go-sensei/archive.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/up-down-left-right/single.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/pokemon-go-sensei/woocommerce.php",
+		"/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/sublime-sftp-browse-1476390311/mapped/var/www/html/wp-config.php",
+		"/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/sublime-sftp-browse-1476389506/mapped/var/www/html/wp-config.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/sftp-config.json",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/pokemon-go-sensei/_/parts/navigation.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/up-down-left-right-child/home-page-template.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/up-down-left-right-child/header.php",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/up-down-left-right-child/style.css",
+		"/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/sublime-sftp-browse-1476387165/mapped/var/www/html/.htaccess",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/up-down-left-right CHILD/full-width-template.php",
+		"/Users/dougbeney/Desktop/dummy-data.xml",
+		"/Users/dougbeney/Desktop/Coding/Commerical-Sites/Pokemon Go Sensei/up-down-left-right CHILD/style.css",
+		"/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/sublime-sftp-browse-1476384342/mapped/var/www/html/wp-config.php",
+		"/Users/dougbeney/Library/Application Support/Sublime Text 3/Packages/User/Pokemon Go Sensei",
+		"/Users/dougbeney/Library/Application Support/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/db52e1c5-0128-4e03-b80f-cadf7f67ccff/var/www/html/wp-content/themes/up-down-left-right/style.css",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/db52e1c5-0128-4e03-b80f-cadf7f67ccff/var/www/html/wp-content/themes/up-down-left-right CHILD/style.css",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/db52e1c5-0128-4e03-b80f-cadf7f67ccff/var/www/html/wp-content/themes/up-down-left-right CHILD/header.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/db52e1c5-0128-4e03-b80f-cadf7f67ccff/var/www/html/wp-content/themes/up-down-left-right CHILD/index.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/db52e1c5-0128-4e03-b80f-cadf7f67ccff/var/www/html/wp-content/themes/up-down-left-right CHILD/woocommerce.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/db52e1c5-0128-4e03-b80f-cadf7f67ccff/var/www/html/wp-content/themes/up-down-left-right CHILD/functions.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/2c040dad-5868-48bc-903a-2fc8880f8493/srv/course-diymidicontroller/wp-content/themes/educate child/templates/full-page.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/2c040dad-5868-48bc-903a-2fc8880f8493/srv/course-diymidicontroller/wp-content/themes/educate child/page.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/2c040dad-5868-48bc-903a-2fc8880f8493/srv/course-diymidicontroller/wp-content/themes/educate child/style.css",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/2c040dad-5868-48bc-903a-2fc8880f8493/srv/course-diymidicontroller/wp-content/themes/educate child/page-templates/full-width.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/2c040dad-5868-48bc-903a-2fc8880f8493/srv/course-diymidicontroller/wp-content/themes/educate child/single.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/2c040dad-5868-48bc-903a-2fc8880f8493/srv/course-diymidicontroller/wp-content/themes/educate child/post.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/2c040dad-5868-48bc-903a-2fc8880f8493/srv/course-diymidicontroller/wp-content/themes/educate child/functions.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/2c040dad-5868-48bc-903a-2fc8880f8493/srv/dougbeney/wp-content/themes/Doug-Beney/resources/income_chart_data.csv",
+		"/Users/dougbeney/Desktop/Coding/Projects/ChessMath/chessBoard.js",
+		"/Users/dougbeney/Desktop/Competitor Websites.gsheet",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/d631a053-b223-40b8-bff5-30718e21b2b6/var/www/html/wp-config.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/2c040dad-5868-48bc-903a-2fc8880f8493/srv/dougbeney/wp-content/themes/Doug-Beney/plain-text.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/2c040dad-5868-48bc-903a-2fc8880f8493/srv/dougbeney/wp-content/themes/Doug-Beney/full-width-post.php",
+		"/Users/dougbeney/Desktop/key.asc",
+		"/Users/dougbeney/Desktop/msg.txt",
+		"/Users/dougbeney/Desktop/bob.gpg",
+		"/Users/dougbeney/Desktop/Encrypted.txt",
+		"/Users/dougbeney/Desktop/doc.gpg",
+		"/Users/dougbeney/Desktop/secretarmor.asc",
+		"/Users/dougbeney/Desktop/armorexport.asc",
+		"/Users/dougbeney/Desktop/revoke.txt",
+		"/Users/dougbeney/Desktop/04023B7A883986404EBE270D1CAA38.txt",
+		"/Users/dougbeney/Library/Containers/com.lastpass.LastPass/Data/Library/Application Support/LastPass/tmp/A46A6232E2F449C42823066107083C.txt",
+		"/Users/dougbeney/Desktop/wallets.txt",
+		"/Volumes/NO NAME/wallets.txt",
+		"/Users/dougbeney/Desktop/encrypt.txt",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/c5740bee-eb24-40e0-8a1e-a8f19935ef95/var/www/html/wp-config.php",
+		"/Volumes/USB FLASH/Untitled.txt",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/c5740bee-eb24-40e0-8a1e-a8f19935ef95/var/www/html/wp-content/themes/dailyedition/header.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/c5740bee-eb24-40e0-8a1e-a8f19935ef95/var/www/html/wp-content/themes/dailyedition/footer.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/c5740bee-eb24-40e0-8a1e-a8f19935ef95/var/www/html/wp-content/themes/dailyedition/index.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/e5c2131c-8fce-4564-8c17-d8b2d517af23/var/www/html/wp-content/themes/penguin/content-grid.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/c5740bee-eb24-40e0-8a1e-a8f19935ef95/var/www/html/wp-content/themes/dailyedition/content.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/e5c2131c-8fce-4564-8c17-d8b2d517af23/var/www/html/wp-content/themes/penguin/functions.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/e5c2131c-8fce-4564-8c17-d8b2d517af23/var/www/html/wp-content/themes/penguin/footer.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/e5c2131c-8fce-4564-8c17-d8b2d517af23/var/www/html/wp-content/themes/penguin/header.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/e5c2131c-8fce-4564-8c17-d8b2d517af23/var/www/html/wp-config.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/2c040dad-5868-48bc-903a-2fc8880f8493/srv/dougbeney/wp-content/themes/Doug-Beney/income-chart.php",
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/2c040dad-5868-48bc-903a-2fc8880f8493/srv/dougbeney/wp-config.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 115.0,
+		"where_history":
+		[
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"wp_head",
+			"# page",
+			"comment",
+			"border-rad",
+			"<?",
+			"color",
+			"140",
+			"floemedia",
+			"# page",
+			"input[type=\"text\"]",
+			".email",
+			"40px",
+			"facebook_url",
+			"winwar_first_sentence",
+			"exce",
+			"share_counts",
+			"require",
+			"enq",
+			";",
+			"# widget",
+			"get_autho",
+			"get_p",
+			"# nav",
+			".mobile",
+			"input",
+			"white",
+			"# page",
+			"page elem",
+			"primary",
+			"# widg",
+			"#weidget",
+			"# page ele",
+			"# page",
+			"# typ",
+			"exce",
+			"css",
+			"style",
+			"css",
+			"white",
+			";",
+			"site-header",
+			"mast",
+			"langu",
+			"social",
+			"script",
+			"yahoo",
+			"google\"",
+			"\"us",
+			"free",
+			"group",
+			"brand",
+			"logo",
+			"login",
+			"force",
+			"dougbeney.com",
+			"font",
+			"<a class=\"home-link\" href=\"<?php bloginfo('home') ?>\"><img class=\"brand-img\" src=\"http://i.imgur.com/XK9Rgm2.png\"><span class=\"screenreader home\"></span></a>",
+			"<?php include (TEMPLATEPATH . ' CHILD/_/parts/navigation.php' ); ?>",
+			"ul",
+			"li",
+			"bomb",
+			"ssl",
+			"include",
+			"menu",
+			"register",
+			"blue",
+			"cache",
+			"featimg",
+			"debug",
+			"center-wrap",
+			"http:",
+			"cano",
+			"http://",
+			"http:",
+			"http://",
+			"1173",
+			"have",
+			"ask()",
+			"amazo",
+			"amazon",
+			"retin",
+			"retina",
+			"http:",
+			"http",
+			"http:",
+			"#ddd",
+			"pokemon",
+			"block",
+			"h1",
+			"/api/comments",
+			"/comment",
+			">\n",
+			";",
+			"img"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"input[type=\"text\"],input[type=\"email\"]",
+			"facebook_handle",
+			"limit_excerpt",
+			"social_counts",
+			"",
+			"$contrasting-text-color",
+			"",
+			"example.com",
+			"<a class=\"home-link\" href=\"<?php bloginfo('home') ?>\"><img class=\"brand-img\" src=\"https://pokemongosensei.com/wp-content/uploads/2016/10/logo.png\"><span class=\"screenreader home\"></span></a>",
+			"<?php include ('/var/www/html/wp-content/themes/pokemon-go-sensei/_/parts/navigation.php' ); ?>",
+			"pollUser()",
+			"red",
+			"white",
+			"Pokemon",
+			"/api/comments.json",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 134.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 29.0
+	},
+	"output.sftp":
+	{
+		"height": 93.0
+	},
+	"output.textarea":
+	{
+		"height": 134.0
+	},
+	"pinned_build_system": "",
+	"project": "blocEngine.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/Coding/Commerical-Sites/Doug Beney/Doug Beney.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 329.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
