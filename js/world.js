@@ -8,14 +8,13 @@ class Block{
   }
 }
 
-
 var world = {
   
   background: '#1A98FC',
 
   grid: {
-    blockScale: 50,
-    spawn_location: [0, 0],
+    blockScale: 20,
+    spawn_location: [0, -10],
     offsetX: 0,
     offsetY: 0,
     dx: 0,
@@ -35,10 +34,24 @@ var world = {
     });
   },
 
-  init: function(){
+  init: function(generateland){
     //set spawn
     this.grid.offsetX = this.grid.spawn_location[0]*this.grid.blockScale;
     this.grid.offsetY = this.grid.spawn_location[1]*this.grid.blockScale;
+
+    if(generateland){
+      world.addBlock(blockTypes.ground, 0,12);
+      world.addBlock(blockTypes.ground, -40,13);
+      world.addBlock(blockTypes.ground, -80,12);
+      world.addBlock(blockTypes.ground, 40,12);
+      world.addBlock(blockTypes.ground, 80,14);
+      world.addBlock(blockTypes.ground, 120,13);
+      world.addBlock(blockTypes.ground, 160,12);
+      world.addBlock(blockTypes.ground, 200,13);
+
+      world.addBlock(blockTypes.house, 10,7);
+    }
+    
   },
 
   logic: function(){
@@ -48,7 +61,7 @@ var world = {
   
   render: function(cxt){
 
-  cxt.fillStyle = this.background;
+    cxt.fillStyle = this.background;
     cxt.fillRect(0,0,width,height);
     
     for(var i = 0; i < this.blockDatabase.length; i++){
@@ -61,5 +74,21 @@ var world = {
 
     }
 
+  },
+  runEvent: {
+    move: function(direction, moveOnXAxis){
+      if(moveOnXAxis){
+        world.grid.dx = direction;
+      }else{
+        world.grid.dy = direction;
+      }
+    },
+    zoom: function(amount){
+      if(world.grid.blockScale+amount <= 75 && world.grid.blockScale+amount >= 10){
+        world.grid.blockScale += amount;
+      }
+    }
   }
+
+  
 };

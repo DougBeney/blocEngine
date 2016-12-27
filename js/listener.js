@@ -3,36 +3,57 @@ $(function(){
 	var d_key = 68;
 	var s_key = 83;
 	var w_key = 87;
+	var q_key = 81;
 	var plus = 187;
 	var minus = 189;
 
+	document.addEventListener('mousedown', function(e){
+		    var mouseX, mouseY;
+
+		    if(e.offsetX) {
+		        mouseX = e.offsetX;
+		        mouseY = e.offsetY;
+		    }
+		    else if(e.layerX) {
+		        mouseX = e.layerX;
+		        mouseY = e.layerY;
+		    }
+			
+			console.log('curwidth ' + cur_game_width);
+		    mouseX = (mouseX/cur_game_width)*width;
+		    mouseY = (mouseY/cur_game_height)*height;
+
+		    console.log('mousex ' + mouseX + ' mousey ' + mouseY);
+	});
+
 	document.addEventListener('keydown', function(e){
+		
+		
 
 		switch(e.keyCode){
 			case a_key:
-				world.grid.dx = world.grid.speed;
+				world.runEvent.move(world.grid.speed, true);
 				break;
 			case d_key:
-				world.grid.dx = -world.grid.speed;
+				world.runEvent.move(-world.grid.speed, true);
 				break;
 			case w_key:
-				world.grid.dy = world.grid.speed;
+				world.runEvent.move(world.grid.speed, false);
 				break;
 			case s_key:
-				world.grid.dy = -world.grid.speed;
+				world.runEvent.move(-world.grid.speed, false);
+				break;
+			case q_key:
+				inventory.runEvent.toggleInventory();
 				break;
 			case plus:
-				if(world.grid.blockScale+10 <= 100){
-					world.grid.blockScale += 5;
-				}
+				world.runEvent.zoom(2.5);
 				break;
 			case minus:
-				if(world.grid.blockScale-10 >= 1){
-					world.grid.blockScale -= 5;
-				}
+				world.runEvent.zoom(-2.5);
 				break;
 			default:
-				console.log('Nothing assigned to key '+e.keyCode);
+				console.log('Nothing assigned to key down '+e.keyCode);
 				break;
 		}
 	});
@@ -40,23 +61,16 @@ $(function(){
 
 		switch(e.keyCode){
 			case a_key:
-				world.grid.dx = 0;
+				world.runEvent.move(0, true);
 				break;
 			case d_key:
-				world.grid.dx = 0;
+				world.runEvent.move(0, true);
 				break;
 			case w_key:
-				world.grid.dy = 0;
+				world.runEvent.move(0, false);
 				break;
 			case s_key:
-				world.grid.dy = 0;
-				break;
-			case plus:
-				break;
-			case minus:
-				break;
-			default:
-				console.log(e.keyCode);
+				world.runEvent.move(0, false);
 				break;
 		}
 	});

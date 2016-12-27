@@ -30,23 +30,26 @@
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/674044/exoro.js"></script>
+<script type="text/javascript" src="assets/lib/exoro.js"></script>
 
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/world.js"></script>
-<script type="text/javascript" src="js/blockTypes.js"></script>
+<script type="text/javascript" src="js/block_types.js"></script>
+<script type="text/javascript" src="js/inventory.js"></script>
 <script type="text/javascript" src="js/listener.js"></script>
 
 <script type="text/javascript">
+
+	var game, cur_game_width, cur_game_height, last_game_width, last_game_height;
 	
 	$(function(){
-		var game = $('.gamescreen');
+		game = $('.gamescreen');
 
-		var cur_game_width = game.width();
-		var cur_game_height = game.height();
+		cur_game_width = game.width();
+		cur_game_height = game.height();
 
-		var last_game_width = game.width();
-		var last_game_height = game.height();
+		last_game_width = game.width();
+		last_game_height = game.height();
 
 
 		resize();
@@ -73,14 +76,12 @@
 			}else{
 
 				if(window_height / ratio > window_width){
-					console.log('cum');
 					game.css('width', window_width);
 					game.css('height', window_width*ratio);
 				}else{
 					game.css('width', window_width);
 					game.css('height', window_height);
 				}
-				console.log('organge');
 
 
 				
