@@ -22,7 +22,6 @@
 	</button>
 </a>
 </div>
-<h5><a class="headerhide" href="#">Toggle header</a></h5>
 </header>
 
 <canvas class="gamescreen" width="1280" height="720"></canvas>
@@ -89,13 +88,6 @@
 
 		$(window).resize(function() {
 			resize();
-		});
-
-		$('a.headerhide').on('click', function(){
-			$('header').slideToggle(function(){
-				resize();
-			});
-			
 		});
 
 	});
