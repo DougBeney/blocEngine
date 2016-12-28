@@ -42,14 +42,14 @@ var world = {
     this.grid.offsetY = this.grid.spawn_location[1]*this.grid.blockScale;
 
     if(generateland){
-      world.addBlock(blockTypes.ground, 0,12);
-      world.addBlock(blockTypes.ground, -40,13);
-      world.addBlock(blockTypes.ground, -80,12);
-      world.addBlock(blockTypes.ground, 40,12);
-      world.addBlock(blockTypes.ground, 80,14);
-      world.addBlock(blockTypes.ground, 120,13);
-      world.addBlock(blockTypes.ground, 160,12);
-      world.addBlock(blockTypes.ground, 200,13);
+      world.addBlock(blockTypes.ground_large, 0,12);
+      world.addBlock(blockTypes.ground_large, -40,13);
+      world.addBlock(blockTypes.ground_large, -80,12);
+      world.addBlock(blockTypes.ground_large, 40,12);
+      world.addBlock(blockTypes.ground_large, 80,14);
+      world.addBlock(blockTypes.ground_large, 120,13);
+      world.addBlock(blockTypes.ground_large, 160,12);
+      world.addBlock(blockTypes.ground_large, 200,13);
 
       world.addBlock(blockTypes.house, 10,7);
     }

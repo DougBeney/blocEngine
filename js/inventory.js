@@ -1,7 +1,7 @@
 var inventory_img = new Image();
 var inventory_slot_img = new Image();
 var show_full_inventory = false;
-var current_item = blockTypes.wood_ladder;
+var current_item = null;
 
 var inventory_slots = [];
 
