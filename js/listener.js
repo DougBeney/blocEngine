@@ -6,6 +6,7 @@ $(function(){
 	var s_key = 83;
 	var w_key = 87;
 	var q_key = 81;
+	var f_key = 70;
 	var plus = 187;
 	var minus = 189;
 	var tilde = 192;
@@ -84,6 +85,11 @@ $(function(){
 				break;
 			case q_key:
 				inventory.runEvent.toggleInventory();
+				break;
+			case f_key:
+				$('header').slideToggle(function(){
+					resize();
+				});
 				break;
 			case plus:
 				world.runEvent.zoom(2.5);

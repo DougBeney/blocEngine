@@ -13,7 +13,7 @@
 <header>
 <div class="content">
 <h1>blocEngine</h1>
-<h3><strong>Controls:</strong> WASD to move. (+ & -) to zoom. Q to toggle inventory. Tilde to toggle cinematic mode.</h3>
+<h3><strong>Controls:</strong> WASD to move. (+ & -) to zoom. Q to toggle inventory. Tilde to toggle cinematic mode. Right click to place blocks. F to toggle fullscreen.</h3>
 
 <a target="_blank" href="https://github.com/DougBeney/blocEngine">
 	<button class="github">
@@ -26,7 +26,6 @@
 </header>
 
 <canvas class="gamescreen" width="1280" height="720"></canvas>
-
 
 
 <!-- Scripts -->
@@ -43,16 +42,49 @@
 
 <script type="text/javascript">
 
-	var game;
+	var game = $('.gamescreen');
+
+	var canvas_width = game.width();
+	var canvas_height = game.height();
+
+	function resize(){
+		var window_width = $(window).width();
+		var header_height;
+		if($('header').is(":visible")){
+			header_height = $('header').height();
+		}else{	
+			header_height = 0;
+		}
+		console.log(header_height);
+		var window_height = $(window).height()-header_height;
+		
+
+		var ratio = canvas_height/canvas_width;
+
+		if(window_width*ratio > window_height){
+			game.css('width', window_height / ratio);
+			game.css('height', window_height);
+
+			
+
+
+
+		}else{
+
+			if(window_height / ratio > window_width){
+				game.css('width', window_width);
+				game.css('height', window_width*ratio);
+			}else{
+				game.css('width', window_width);
+				game.css('height', window_height);
+			}
+
+
+			
+		}
+	}
 	
 	$(function(){
-
-
-		game = $('.gamescreen');
-
-		var canvas_width = game.width();
-		var canvas_height = game.height();
-
 
 		resize();
 
@@ -60,44 +92,8 @@
 			resize();
 		});
 
-		function resize(){
-			var window_width = $(window).width();
-			var header_height;
-			if($('header').length){
-				header_height = $('header').height();
-			}else{	
-				header_height = 0;
-			}
-			var window_height = $(window).height()-header_height;
-			
-
-			var ratio = canvas_height/canvas_width;
-
-			if(window_width*ratio > window_height){
-				game.css('width', window_height / ratio);
-				game.css('height', window_height);
-
-				
-
-
-
-			}else{
-
-				if(window_height / ratio > window_width){
-					game.css('width', window_width);
-					game.css('height', window_width*ratio);
-				}else{
-					game.css('width', window_width);
-					game.css('height', window_height);
-				}
-
-
-				
-			}
-		}
-
 		$('a.headerhide').on('click', function(){
-			$('.content').slideToggle(function(){
+			$('header').slideToggle(function(){
 				resize();
 			});
 			
