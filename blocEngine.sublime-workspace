@@ -31,6 +31,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "js/blockTypes.js",
+			"settings":
+			{
+				"buffer_size": 329,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -282,7 +291,8 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/dougbeney/Desktop/Coding/Games/blockEngine"
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js"
 	],
 	"file_history":
 	[
@@ -563,8 +573,40 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "js/blockTypes.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 329,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								316,
+								316
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -643,7 +685,7 @@
 		[
 			[
 				"",
-				"~/Desktop/Coding/Commerical-Sites/Doug Beney/Doug Beney.sublime-workspace"
+				"~/Desktop/Coding/Websites/dougbeney.github.io/dougbeney.github.io.sublime-project"
 			]
 		],
 		"width": 380.0
