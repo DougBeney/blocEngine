@@ -1,3 +1,5 @@
+var mouseX, mouseY;
+
 $(function(){
 	var a_key = 65;
 	var d_key = 68;
@@ -6,24 +8,61 @@ $(function(){
 	var q_key = 81;
 	var plus = 187;
 	var minus = 189;
+	var tilde = 192;
+	
+	document.addEventListener('mousemove', function(e){
 
+			if($('.gamescreen').is(":hover")){
+				var tempx, tempy;
+			    if(e.offsetX) {
+			        tempx = e.offsetX;
+			        tempy = e.offsetY;
+			    }
+			    else if(e.layerX) {
+			        tempx = e.layerX;
+			        tempy = e.layerY;
+			    }
+				
+				var curwidth = parseInt($('.gamescreen').css('width'));
+				var curheight = parseInt($('.gamescreen').css('height'));
+				
+				tempx = (tempx/curwidth)*width;
+				tempy = (tempy/curheight)*height;
+
+				if(tempx < 0){
+					tempx = 0;
+				}else if(tempx > width){
+					tempx = width;
+				}
+				if(tempy < 0){
+					tempx = 0;
+				}else if(tempy > height){
+					tempy = height;
+				}
+				
+				mouseX = tempx;
+				mouseY = tempy;
+			    
+		    }
+	});
 	document.addEventListener('mousedown', function(e){
-		    var mouseX, mouseY;
+		    if(e.button == 0 || e.button == 1){
+		    	//left Click
+		    	inventory.runEvent.handleClick('left');
 
-		    if(e.offsetX) {
-		        mouseX = e.offsetX;
-		        mouseY = e.offsetY;
+		    }else if(e.button == 2){
+		    	//right Click	
+		    	e.preventDefault();
+		    	inventory.runEvent.handleClick('right');
+				
+				if(current_item != null){
+					var the_x = Math.round((mouseX+world.grid.offsetX)/world.grid.blockScale)-Math.floor(current_item.width/2);
+					var the_y = Math.round((mouseY+world.grid.offsetY)/world.grid.blockScale);
+					
+			    	world.addBlock(current_item, the_x, the_y);
+		    	}
 		    }
-		    else if(e.layerX) {
-		        mouseX = e.layerX;
-		        mouseY = e.layerY;
-		    }
-			
-			console.log('curwidth ' + cur_game_width);
-		    mouseX = (mouseX/cur_game_width)*width;
-		    mouseY = (mouseY/cur_game_height)*height;
 
-		    console.log('mousex ' + mouseX + ' mousey ' + mouseY);
 	});
 
 	document.addEventListener('keydown', function(e){
@@ -51,6 +90,10 @@ $(function(){
 				break;
 			case minus:
 				world.runEvent.zoom(-2.5);
+				break;
+			case tilde:
+				world.cinematic_mode = !world.cinematic_mode;
+				inventory.runEvent.toggleInventory(2);
 				break;
 			default:
 				console.log('Nothing assigned to key down '+e.keyCode);

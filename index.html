@@ -11,8 +11,9 @@
 <body>
 
 <header>
+<div class="content">
 <h1>blocEngine</h1>
-<h3><strong>Controls:</strong> WASD to move. (+ & -) to zoom. Q to toggle inventory.</h3>
+<h3><strong>Controls:</strong> WASD to move. (+ & -) to zoom. Q to toggle inventory. Tilde to toggle cinematic mode.</h3>
 
 <a target="_blank" href="https://github.com/DougBeney/blocEngine">
 	<button class="github">
@@ -20,7 +21,8 @@
 		<span class="text">View code on Github</span>
 	</button>
 </a>
-
+</div>
+<h5><a class="headerhide" href="#">Toggle header</a></h5>
 </header>
 
 <canvas class="gamescreen" width="1280" height="720"></canvas>
@@ -34,22 +36,22 @@
 
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/world.js"></script>
-<script type="text/javascript" src="js/block_types.js"></script>
+<script type="text/javascript" src="js/blockTypes.js"></script>
 <script type="text/javascript" src="js/inventory.js"></script>
+<script type="text/javascript" src="js/collision.js"></script>
 <script type="text/javascript" src="js/listener.js"></script>
 
 <script type="text/javascript">
 
-	var game, cur_game_width, cur_game_height, last_game_width, last_game_height;
+	var game;
 	
 	$(function(){
+
+
 		game = $('.gamescreen');
 
-		cur_game_width = game.width();
-		cur_game_height = game.height();
-
-		last_game_width = game.width();
-		last_game_height = game.height();
+		var canvas_width = game.width();
+		var canvas_height = game.height();
 
 
 		resize();
@@ -60,10 +62,16 @@
 
 		function resize(){
 			var window_width = $(window).width();
-			var window_height = $(window).height()-$('header').height();
+			var header_height;
+			if($('header').length){
+				header_height = $('header').height();
+			}else{	
+				header_height = 0;
+			}
+			var window_height = $(window).height()-header_height;
 			
 
-			var ratio = cur_game_height/cur_game_width;
+			var ratio = canvas_height/canvas_width;
 
 			if(window_width*ratio > window_height){
 				game.css('width', window_height / ratio);
@@ -86,10 +94,14 @@
 
 				
 			}
-
-			last_game_width = game.width();
-			last_game_height = game.height();
 		}
+
+		$('a.headerhide').on('click', function(){
+			$('.content').slideToggle(function(){
+				resize();
+			});
+			
+		});
 
 	});
 

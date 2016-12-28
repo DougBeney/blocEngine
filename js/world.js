@@ -7,19 +7,21 @@ class Block{
     this.texture = texture_image;
   }
 }
+var default_speed = 20.3;
 
 var world = {
   
   background: '#1A98FC',
+  cinematic_mode: false,
 
   grid: {
     blockScale: 20,
-    spawn_location: [0, -10],
+    spawn_location: [0, 0],
     offsetX: 0,
     offsetY: 0,
     dx: 0,
     dy: 0,
-    speed: 20.3,
+    speed: 0,
   },
 
   blockDatabase: [],
@@ -57,6 +59,14 @@ var world = {
   logic: function(){
     this.grid.offsetX -= this.grid.dx;
     this.grid.offsetY -= this.grid.dy;
+
+    if(this.cinematic_mode){
+      this.grid.speed = default_speed/5;
+    }else{
+      if(this.grid.speed != default_speed){
+        this.grid.speed = default_speed;
+      }
+    }
   },
   
   render: function(cxt){

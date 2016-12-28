@@ -8,6 +8,10 @@ function exoroInit(cxt, canvas, drawCallback, logicCallback){
                              window.webkitRequestAnimationFrame ||
                              window.msRequestAnimationFrame;
 
+   canvas.oncontextmenu = function() {
+        return false;  
+   } 
+
   }init();
   function loop(){
     cxt.clearRect(0,0,canvas.width,canvas.height);
