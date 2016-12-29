@@ -4,19 +4,14 @@ window.onload = function(){
   
   init();
     
+
   
   function draw(){
-    
-
-    world.render(cxt);
-    inventory.render(cxt);
+    stateManager.render(cxt);
   }
 
   function logic(){
-    
-
-    world.logic();
-    inventory.logic();
+    stateManager.logic();
   }
   
    function init(){ 
@@ -25,11 +20,12 @@ window.onload = function(){
     canvas.height = height;
     document.body.appendChild(canvas);
     cxt = canvas.getContext('2d');
+
+    stateManager.init()
+
     exoroInit(cxt, canvas, draw, logic);
     
-    world.init(true);
-    inventory.init();
-  }
+    }
 
 }
 

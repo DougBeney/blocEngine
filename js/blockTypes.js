@@ -10,10 +10,7 @@ darkwood_1x1: new Block(1,1,'assets/textures/darkwood_1x1.png'),
 dirt_1x1: new Block(1,1,'assets/textures/dirt_1x1.png'),
 grass_1x1: new Block(1,1,'assets/textures/grass_1x1.png'),
 tree_4x11: new Block(4,11,'assets/textures/tree_4x11.png'),
-chicken_1x1: new Block(1,1,'assets/textures/chicken_1x1.png'),
-pig_2x1: new Block(2,1,'assets/textures/pig_2x1.png'),
-sheep_2x1: new Block(2,1,'assets/textures/sheep_2x1.png'),
-
+cat_1x1: new Block(1,1,'assets/textures/cat_1x1.png'),
 
 
 

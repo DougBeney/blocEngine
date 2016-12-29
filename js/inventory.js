@@ -5,11 +5,6 @@ var current_item = null;
 
 var inventory_slots = [];
 
-for (var key in blockTypes){
-	current_item = blockTypes[key];
-	break;
-}
-
 var inventory = {
 
 	invslot_size: 100,
@@ -21,20 +16,25 @@ var inventory = {
 		inventory_slot_img.src="assets/HUD/inventory_slot.png";
 	},
 	render: function(cxt){
+
+		cxt.imageSmoothingEnabled = false;
+		
 		if(!world.cinematic_mode){
 		//drawing inventory if enabled
 		
-		cxt.save();
-		cxt.globalAlpha=0.6;
-		
-		var the_w = current_item.width;
-		var the_h = current_item.height;
-
-		var the_x = Math.round((mouseX+world.grid.offsetX)/world.grid.blockScale)-Math.floor(current_item.width/2);
-		var the_y = Math.round((mouseY+world.grid.offsetY)/world.grid.blockScale);
-
-		cxt.drawImage(current_item.texture, the_x*world.grid.blockScale-world.grid.offsetX, the_y*world.grid.blockScale-world.grid.offsetY, current_item.width*world.grid.blockScale, current_item.height*world.grid.blockScale);
-		cxt.restore();
+		if(current_item != null){
+			var the_w = current_item.width;
+			var the_h = current_item.height;
+			
+			var the_x = Math.round((mouseX+world.grid.offsetX)/world.grid.blockScale);
+			var the_y = Math.round((mouseY+world.grid.offsetY)/world.grid.blockScale);
+			
+			
+			cxt.save();
+			cxt.globalAlpha=0.6;
+			cxt.drawImage(current_item.texture, the_x*world.grid.blockScale-world.grid.offsetX, the_y*world.grid.blockScale-world.grid.offsetY, current_item.width*world.grid.blockScale, current_item.height*world.grid.blockScale);
+			cxt.restore();
+		}
 
 		if(show_full_inventory){
 			var the_x = this.invslot_margin;
@@ -159,35 +159,58 @@ var inventory = {
 				}
 			}
 		},
-		handleClick: function(button){
-			if(show_full_inventory){
-				if(button == 'left'){
-
-					for(var item in inventory_slots){
-						if(collision.intersects(
-						{
-							x: mouseX,
-							y: mouseY,
-							w: 1,
-							h: 1,
-						},
-						{
-							x:inventory_slots[item].x,
-							y:inventory_slots[item].y,
-							w:inventory_slots[item].w,
-							h:inventory_slots[item].h,
-						}
-						)){
-							current_item = inventory_slots[item].block;
-							break;
-
-						}
-					}
-
-				}else if(button == 'right'){
-
-				}
+		keyDown: function(e){
+			switch(e.keyCode){
+				case q_key:
+				  inventory.runEvent.toggleInventory();
+				  break;
 			}
+		},
+		keyUp: function(e){
+
+		},
+		mouseDown: function(e){
+			if(show_full_inventory){
+			  if(e.button == 0 || e.button == 1){
+			  	//left Click
+			  	for(var item in inventory_slots){
+			  		if(collision.intersects(
+			  		{
+			  			x: mouseX,
+			  			y: mouseY,
+			  			w: 1,
+			  			h: 1,
+			  		},
+			  		{
+			  			x:inventory_slots[item].x,
+			  			y:inventory_slots[item].y,
+			  			w:inventory_slots[item].w,
+			  			h:inventory_slots[item].h,
+			  		}
+			  		)){
+			  			current_item = inventory_slots[item].block;
+			  			break;
+
+			  		}
+			  	}
+
+			  }else if(e.button == 2){
+			  	//right Click	
+			  	e.preventDefault();
+			  	if(collision.intersects(
+			  	{x: mouseX, y: mouseY, w: 1, h: 1,},
+			  	{x:inventory.invslot_margin, y:height-inventory.invslot_margin-inventory.invslot_size, w:inventory.invslot_size, h:inventory.invslot_size}
+			  	)){
+			  		current_item = null;
+			  	}
+			  }
+			}
+		},
+		mouseUp: function(e){
+
+		},
+		mouseDrag: function(e){
+
 		}
 	}
 };

@@ -10,8 +10,8 @@ var collision = {
 		var x2 =  Rect2.x;
 		var y2 =  Rect2.y;
 
-		if(x1+w1 >= x2 && x1 <= x2+w2){
-			if(y1+h1 >= y2 && y1 <= y2+h2){
+		if(x1+w1 > x2 && x1 < x2+w2){
+			if(y1+h1 > y2 && y1 < y2+h2){
 				return true;
 			}else{
 				return false;

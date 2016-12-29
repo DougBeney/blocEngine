@@ -29,18 +29,6 @@
 			]
 		]
 	},
-	"buffers":
-	[
-		{
-			"file": "js/blockTypes.js",
-			"settings":
-			{
-				"buffer_size": 329,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
-	],
 	"build_system": "",
 	"build_system_choices":
 	[
@@ -68,10 +56,30 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 225.0,
-		"last_filter": "ftp up",
+		"height": 113.0,
+		"last_filter": "git push",
 		"selected_items":
 		[
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
 			[
 				"ftp up",
 				"SFTP: Upload File"
@@ -93,16 +101,8 @@
 				"Borat Ipsum"
 			],
 			[
-				"git push",
-				"Git: Push"
-			],
-			[
 				"git commit",
 				"Git: Commit"
-			],
-			[
-				"git add",
-				"Git: Add All"
 			],
 			[
 				"git commi",
@@ -111,10 +111,6 @@
 			[
 				"git a",
 				"Git: Add All"
-			],
-			[
-				"git comm",
-				"Git: Commit"
 			],
 			[
 				"git in",
@@ -269,7 +265,7 @@
 				"Boxy Theme: Activation"
 			]
 		],
-		"width": 449.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -289,11 +285,6 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js"
-	],
 	"file_history":
 	[
 		"/Users/dougbeney/Desktop/Coding/Games/The-Rise-of-Jonesport/index.html",
@@ -427,7 +418,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -446,6 +437,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"toggle",
+			"wood",
 			"wp_head",
 			"# page",
 			"comment",
@@ -570,46 +563,6 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"groups":
-	[
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"file": "js/blockTypes.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 329,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								316,
-								316
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		}
-	],
 	"incremental_find":
 	{
 		"height": 29.0
@@ -651,7 +604,7 @@
 	},
 	"output.git":
 	{
-		"height": 29.0
+		"height": 351.0
 	},
 	"output.sftp":
 	{
@@ -662,7 +615,6 @@
 		"height": 134.0
 	},
 	"pinned_build_system": "",
-	"project": "blocEngine.sublime-project",
 	"replace":
 	{
 		"height": 54.0
@@ -699,7 +651,6 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
 	"settings":
 	{
 	},
