@@ -65,7 +65,7 @@
 				"Git: Push"
 			],
 			[
-				"git co",
+				"git comm",
 				"Git: Commit"
 			],
 			[
@@ -73,7 +73,15 @@
 				"Git: Add All"
 			],
 			[
-				"git comm",
+				"markdo",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git co",
 				"Git: Commit"
 			],
 			[
@@ -115,10 +123,6 @@
 			[
 				"git in",
 				"Git: Init"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"shell ",
@@ -287,6 +291,18 @@
 	},
 	"file_history":
 	[
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/stateManager.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/listener.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/inventory.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/world.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/blockTypes.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/README.md",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/collision.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/index.html",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/menus/mainMenu.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/main.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/mainMenu.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/style.css",
 		"/Users/dougbeney/Desktop/Coding/Games/The-Rise-of-Jonesport/index.html",
 		"/Users/dougbeney/Desktop/Coding/Websites/doug-beney/Doug-Beney/functions.php",
 		"/Users/dougbeney/Downloads/Sonic Academy - KICK 2 v1.0.4 macOS [R2R][dada]/KICK 2 v1.0.4/KICK2.KEYFILE",
@@ -402,19 +418,7 @@
 		"/Users/dougbeney/Desktop/wallets.txt",
 		"/Volumes/NO NAME/wallets.txt",
 		"/Users/dougbeney/Desktop/encrypt.txt",
-		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/c5740bee-eb24-40e0-8a1e-a8f19935ef95/var/www/html/wp-config.php",
-		"/Volumes/USB FLASH/Untitled.txt",
-		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/c5740bee-eb24-40e0-8a1e-a8f19935ef95/var/www/html/wp-content/themes/dailyedition/header.php",
-		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/c5740bee-eb24-40e0-8a1e-a8f19935ef95/var/www/html/wp-content/themes/dailyedition/footer.php",
-		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/c5740bee-eb24-40e0-8a1e-a8f19935ef95/var/www/html/wp-content/themes/dailyedition/index.php",
-		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/e5c2131c-8fce-4564-8c17-d8b2d517af23/var/www/html/wp-content/themes/penguin/content-grid.php",
-		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/c5740bee-eb24-40e0-8a1e-a8f19935ef95/var/www/html/wp-content/themes/dailyedition/content.php",
-		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/e5c2131c-8fce-4564-8c17-d8b2d517af23/var/www/html/wp-content/themes/penguin/functions.php",
-		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/e5c2131c-8fce-4564-8c17-d8b2d517af23/var/www/html/wp-content/themes/penguin/footer.php",
-		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/e5c2131c-8fce-4564-8c17-d8b2d517af23/var/www/html/wp-content/themes/penguin/header.php",
-		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/e5c2131c-8fce-4564-8c17-d8b2d517af23/var/www/html/wp-config.php",
-		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/2c040dad-5868-48bc-903a-2fc8880f8493/srv/dougbeney/wp-content/themes/Doug-Beney/income-chart.php",
-		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/2c040dad-5868-48bc-903a-2fc8880f8493/srv/dougbeney/wp-config.php"
+		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/c5740bee-eb24-40e0-8a1e-a8f19935ef95/var/www/html/wp-config.php"
 	],
 	"find":
 	{
@@ -425,6 +429,7 @@
 		"height": 115.0,
 		"where_history":
 		[
+			"",
 			"<current file>",
 			"",
 			"<current file>",
@@ -437,6 +442,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"show",
+			"option_rec",
+			"buttonDown",
+			"cursor:",
 			"toggle",
 			"wood",
 			"wp_head",
@@ -540,6 +549,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"mouseDown",
 			"input[type=\"text\"],input[type=\"email\"]",
 			"facebook_handle",
 			"limit_excerpt",
@@ -565,7 +575,7 @@
 	},
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 41.0
 	},
 	"input":
 	{
@@ -657,7 +667,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 329.0,
 	"status_bar_visible": true,
 	"template_settings":

@@ -22,7 +22,7 @@ var inventory = {
 		if(!world.cinematic_mode){
 		//drawing inventory if enabled
 		
-		if(current_item != null){
+		if(current_item != null && !show_full_inventory){
 			var the_w = current_item.width;
 			var the_h = current_item.height;
 			
