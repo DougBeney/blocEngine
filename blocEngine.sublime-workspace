@@ -56,12 +56,16 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 281.0,
-		"last_filter": "git comm",
+		"height": 113.0,
+		"last_filter": "git push",
 		"selected_items":
 		[
 			[
-				"git comm",
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git com",
 				"Git: Commit"
 			],
 			[
@@ -69,8 +73,12 @@
 				"Git: Add All"
 			],
 			[
-				"git push",
-				"Git: Push"
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"git comm",
+				"Git: Commit"
 			],
 			[
 				"markdo",
@@ -82,10 +90,6 @@
 			],
 			[
 				"git co",
-				"Git: Commit"
-			],
-			[
-				"git com",
 				"Git: Commit"
 			],
 			[
@@ -291,18 +295,18 @@
 	},
 	"file_history":
 	[
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/assets/lib/BP.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/stateManager.js",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/inventory.js",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/world.js",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/listener.js",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/index.html",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/assets/lib/Box2D.js",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/blockTypes.js",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/main.js",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/collision.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/README.md",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/menus/mainMenu.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/blockTypes.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/inventory.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/world.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/index.html",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/listener.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/assets/lib/BP.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/assets/lib/Box2D.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/main.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/collision.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/mainMenu.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/style.css",
 		"/Users/dougbeney/Desktop/Coding/Games/The-Rise-of-Jonesport/index.html",
@@ -442,6 +446,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"zoom",
+			"mouse",
+			"render: ",
+			"blockscale",
+			",\n",
 			"zoom",
 			"add",
 			"zoom",
@@ -627,7 +636,7 @@
 	},
 	"output.git":
 	{
-		"height": 351.0
+		"height": 370.0
 	},
 	"output.sftp":
 	{
@@ -680,7 +689,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 329.0,
 	"status_bar_visible": true,
 	"template_settings":

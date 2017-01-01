@@ -177,13 +177,21 @@ var world = {
         //left Click
         if(!show_full_inventory){
           for(var i in world.blockDatabase){
-            var block_x = world.blockDatabase[i].x*world.grid.blockScale-world.grid.offsetX;
-            var block_y = world.blockDatabase[i].y*world.grid.blockScale-world.grid.offsetY;
-            var block_w = world.blockDatabase[i].width*world.grid.blockScale;
-            var block_h = world.blockDatabase[i].height*world.grid.blockScale;
-            if(collision.intersects({x:mouseX,y:mouseY,w:1,h:1},
-                                    {x: block_x,y:block_y,w:block_w,h:block_h}))
+
+            var the_scale = world.grid.blockScale*world.grid.zoom;
+
+            var mousex = Math.round((mouseX+world.grid.offsetX)/the_scale)*the_scale-world.grid.offsetX;
+            var mousey = Math.round((mouseY+world.grid.offsetY)/the_scale)*the_scale-world.grid.offsetY;
+
+            var block_x = Math.round(world.blockDatabase[i].x/world.grid.blockScale*the_scale)-world.grid.offsetX;
+            var block_y = Math.round(world.blockDatabase[i].y/world.grid.blockScale*the_scale)-world.grid.offsetY;
+            var block_w = Math.round(world.blockDatabase[i].width*world.grid.zoom);
+            var block_h = Math.round(world.blockDatabase[i].height*world.grid.zoom);
+
+            if(collision.intersects({x:mousex,y:mousey,w:1,h:1},
+                                    {x: block_x-(block_w/2),y:block_y-(block_h/2),w:block_w,h:block_h}))
             {
+              BP.physics.world.DestroyBody(world.blockDatabase[i].physicsBody.worldBody);
               world.blockDatabase.splice(i,1);
               break;
             }

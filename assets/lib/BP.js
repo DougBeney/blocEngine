@@ -15,8 +15,10 @@ BP = {
 		world: null,
 		debug: false,
 		createWorld: function(gravity, SCALE){
+
 			this.SCALE = SCALE;
 			this.world = new BP.World(new BP.Vec(0,gravity), true);
+			
 		},
 		initDebug: function(debugElement) {
 			var debugdraw = new BP.DebugDraw();
