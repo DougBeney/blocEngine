@@ -6,6 +6,7 @@ Simple, fast, pixelated.
 
 ## TODO:
 
+- Make block deletion on left-mouse click work for rotated blocks
 - Make the blocktypes file a JSON instead of JS
 - Adding a save map feature
 - "Pause" menu
