@@ -27,11 +27,13 @@
 <canvas class="gamescreen" width="1280" height="720"></canvas>
 
 
+
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="assets/lib/exoro.js"></script>
-
+<script type="text/javascript" src="assets/lib/Box2D.js"></script>
+<script type="text/javascript" src="assets/lib/BP.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/menus/mainMenu.js"></script>
 <script type="text/javascript" src="js/world.js"></script>
@@ -83,14 +85,18 @@
 			
 		}
 	}
+
 	
 	$(function(){
 
+		window.onresize = function(event) {
+		    resize();
+		};
+		
+
 		resize();
 
-		$(window).resize(function() {
-			resize();
-		});
+		
 
 	});
 

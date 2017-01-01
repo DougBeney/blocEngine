@@ -4,6 +4,7 @@ Simple, fast, pixelated.
 
 ## TODO:
 
+- URGENT Make zoom work in game
 - Adding a save map feature
 - "Pause" menu
 - Settings menu
@@ -18,3 +19,8 @@ Simple, fast, pixelated.
 - Add guns
 - Add vehicles that can switch sides of road
 - Adding Multiplayer mode
+
+
+**Ideas**
+
+- Raining Cats & Dogs (literally) mod

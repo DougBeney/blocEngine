@@ -4,6 +4,7 @@ var rightmouse_down = false;
 
 var a_key = 65;
 var d_key = 68;
+var g_key = 71;
 var s_key = 83;
 var w_key = 87;
 var f_key = 70;
@@ -78,14 +79,14 @@ $(function(){
 			rightmouse_down=false;
 		}
 		stateManager.runEvent.mouseUp(e);
-		console.log('mouseup');
 	});
 
 	document.addEventListener('mousedragged', function(e){
 		   stateManager.runEvent.mouseDown(e);
 	});
 
-	document.addEventListener('keydown', function(e){		
+	document.addEventListener('keydown', function(e){
+		//console.log('key ' + e.keyCode);		
 		switch(e.keyCode){
 			case f_key:
 			  $('header').slideToggle(function(){

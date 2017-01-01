@@ -23,16 +23,22 @@ var inventory = {
 		//drawing inventory if enabled
 		
 		if(current_item != null && !show_full_inventory){
-			var the_w = current_item.width;
-			var the_h = current_item.height;
+
+			var the_scale = world.grid.blockScale*world.grid.zoom;
+
+			var the_w = current_item.width*the_scale;
+			var the_h = current_item.height*the_scale;
 			
-			var the_x = Math.round((mouseX+world.grid.offsetX)/world.grid.blockScale);
-			var the_y = Math.round((mouseY+world.grid.offsetY)/world.grid.blockScale);
-			
+			var the_x = Math.round((mouseX+world.grid.offsetX)/the_scale)*the_scale-world.grid.offsetX;
+			var the_y = Math.round((mouseY+world.grid.offsetY)/the_scale)*the_scale-world.grid.offsetY;
 			
 			cxt.save();
 			cxt.globalAlpha=0.6;
-			cxt.drawImage(current_item.texture, the_x*world.grid.blockScale-world.grid.offsetX, the_y*world.grid.blockScale-world.grid.offsetY, current_item.width*world.grid.blockScale, current_item.height*world.grid.blockScale);
+			cxt.drawImage(current_item.img, 
+						the_x, 
+						the_y, 
+						the_w, 
+						the_h);
 			cxt.restore();
 		}
 
@@ -53,7 +59,7 @@ var inventory = {
 			for (var key in blockTypes){
 				if(blockTypes[key] != current_item){
 					var the_block = blockTypes[key];
-					var block_img = the_block.texture;
+					var block_img = the_block.img;
 					var block_width = block_img.width;
 					var block_height = block_img.height;
 					var block_ratio = block_height/block_width;
@@ -116,7 +122,7 @@ var inventory = {
 		
 		
 		if(current_item != null){
-			var block_img = current_item.texture;
+			var block_img = current_item.img;
 			var block_width = block_img.width;
 			var block_height = block_img.height;
 			var block_ratio = block_height/block_width;

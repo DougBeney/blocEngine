@@ -56,14 +56,10 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 113.0,
-		"last_filter": "git push",
+		"height": 281.0,
+		"last_filter": "git comm",
 		"selected_items":
 		[
-			[
-				"git push",
-				"Git: Push"
-			],
 			[
 				"git comm",
 				"Git: Commit"
@@ -71,6 +67,10 @@
 			[
 				"git add",
 				"Git: Add All"
+			],
+			[
+				"git push",
+				"Git: Push"
 			],
 			[
 				"markdo",
@@ -291,16 +291,18 @@
 	},
 	"file_history":
 	[
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/assets/lib/BP.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/stateManager.js",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/listener.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/inventory.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/world.js",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/blockTypes.js",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/README.md",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/collision.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/listener.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/index.html",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/menus/mainMenu.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/assets/lib/Box2D.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/blockTypes.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/main.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/collision.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/README.md",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/menus/mainMenu.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/mainMenu.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/style.css",
 		"/Users/dougbeney/Desktop/Coding/Games/The-Rise-of-Jonesport/index.html",
@@ -416,9 +418,7 @@
 		"/Users/dougbeney/Desktop/04023B7A883986404EBE270D1CAA38.txt",
 		"/Users/dougbeney/Library/Containers/com.lastpass.LastPass/Data/Library/Application Support/LastPass/tmp/A46A6232E2F449C42823066107083C.txt",
 		"/Users/dougbeney/Desktop/wallets.txt",
-		"/Volumes/NO NAME/wallets.txt",
-		"/Users/dougbeney/Desktop/encrypt.txt",
-		"/private/var/folders/42/0md6ynhx5wg1trcr7808cbgc0000gn/T/c5740bee-eb24-40e0-8a1e-a8f19935ef95/var/www/html/wp-config.php"
+		"/Volumes/NO NAME/wallets.txt"
 	],
 	"find":
 	{
@@ -442,6 +442,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"zoom",
+			"add",
+			"zoom",
+			"mouse",
+			"mouseup",
+			"zoom",
+			"blocksc",
+			"zoom",
+			"render",
+			".texture",
+			"120",
+			"block_img",
+			".blocktype",
 			"show",
 			"option_rec",
 			"buttonDown",
@@ -667,7 +680,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 329.0,
 	"status_bar_visible": true,
 	"template_settings":
