@@ -13,7 +13,7 @@ var mainMenu = {
 		
 		//DRAWING DIRT BACKGROUND
 		for(var i = 0; i < width/400; i++){
-			cxt.drawImage(blockTypes.ground_large.texture, 400*i, 0,400,1000);
+			cxt.drawImage(blockTypes.ground_large.img, 400*i, 0,400,1000);
 		}
 		
 		//TITLE
@@ -31,7 +31,7 @@ var mainMenu = {
 		cxt.fillText('>>Multiplayer', 20,350+this.top_margin);
 		
 		//Drawing House
-		cxt.drawImage(blockTypes.cat_1x1.texture, 800, 45+this.top_margin,blockTypes.cat_1x1.width*300,blockTypes.cat_1x1.height*300);
+		cxt.drawImage(blockTypes.cat_1x1.img, 800, 45+this.top_margin,blockTypes.cat_1x1.width*300,blockTypes.cat_1x1.height*300);
 		
 		
 

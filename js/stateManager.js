@@ -1,5 +1,5 @@
 var stateManager = {
-	current_sequence: [world, inventory],
+	current_sequence: [mainMenu],
 
 	init: function(){
 		for(var i in this.current_sequence){
