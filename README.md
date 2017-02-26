@@ -2,12 +2,12 @@
 
 Simple, fast, pixelated.
 
-[Play this Game](https://dougbeney.github.io/blocEngine/)
+[Play this game](https://dougbeney.github.io/blocEngine/)
 
 ## TODO:
 
 - Make block deletion on left-mouse click work for rotated blocks
-- Make the blocktypes file a JSON instead of JS
+- Make the itemTypes file a JSON instead of JS
 - Adding a save map feature
 - "Pause" menu
 - Settings menu

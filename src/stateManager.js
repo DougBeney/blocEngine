@@ -1,7 +1,9 @@
 var stateManager = {
-	current_sequence: [mainMenu],
+	current_sequence: null,
 
-	init: function(){
+	init: function(initial_state){
+		this.current_sequence = initial_state;
+		
 		for(var i in this.current_sequence){
 			if(stateManager.current_sequence[i]){
 				this.current_sequence[i].init();

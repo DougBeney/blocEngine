@@ -65,12 +65,20 @@
 				"Git: Push"
 			],
 			[
-				"git com",
+				"git co",
 				"Git: Commit"
+			],
+			[
+				"git al",
+				"Git: Add All"
 			],
 			[
 				"git add",
 				"Git: Add All"
+			],
+			[
+				"git com",
+				"Git: Commit"
 			],
 			[
 				"mark",
@@ -87,10 +95,6 @@
 			[
 				"install",
 				"Package Control: Install Package"
-			],
-			[
-				"git co",
-				"Git: Commit"
 			],
 			[
 				"ftp up",
@@ -273,7 +277,7 @@
 				"Boxy Theme: Activation"
 			]
 		],
-		"width": 467.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -295,15 +299,15 @@
 	},
 	"file_history":
 	[
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/inventory.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/world.js",
+		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/assets/lib/BP.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/stateManager.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/README.md",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/menus/mainMenu.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/blockTypes.js",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/inventory.js",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/world.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/index.html",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/listener.js",
-		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/assets/lib/BP.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/assets/lib/Box2D.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/main.js",
 		"/Users/dougbeney/Desktop/Coding/Games/blocEngine/js/collision.js",
@@ -426,7 +430,7 @@
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -597,7 +601,7 @@
 	},
 	"incremental_find":
 	{
-		"height": 41.0
+		"height": 34.0
 	},
 	"input":
 	{
@@ -649,7 +653,7 @@
 	"pinned_build_system": "",
 	"replace":
 	{
-		"height": 54.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -689,7 +693,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 329.0,
 	"status_bar_visible": true,
 	"template_settings":

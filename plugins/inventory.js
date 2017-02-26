@@ -6,7 +6,6 @@ var current_item = null;
 var inventory_slots = [];
 
 var inventory = {
-
 	invslot_size: 100,
 	invslot_item_size: 70,
 	invslot_margin: 5,
@@ -14,6 +13,25 @@ var inventory = {
 	init: function(){
 		inventory_img.src="assets/HUD/inventory.png";
 		inventory_slot_img.src="assets/HUD/inventory_slot.png";
+		current_item = itemTypes.house;
+	},
+	pushToInventory: function(inv_item){
+		var exists = false;
+		var index=0;
+		for(var i in inventory_slots){
+			if(inventory_slots[i].type != inv_item.type){
+				exists=false;
+			}else{
+				exists=true;
+				break;
+			}
+		}
+		if(exists){
+			inventory_slots[index].amount += inv_item.amount;
+		}else{
+			inventory_slots.push({type: inv_item.type, amount: inv_item.amount});
+		}
+
 	},
 	render: function(cxt){
 
@@ -21,26 +39,6 @@ var inventory = {
 		
 		if(!world.cinematic_mode){
 		//drawing inventory if enabled
-		
-		if(current_item != null && !show_full_inventory){
-
-			var the_scale = world.grid.blockScale*world.grid.zoom;
-
-			var the_w = current_item.width*the_scale;
-			var the_h = current_item.height*the_scale;
-			
-			var the_x = Math.round((mouseX+world.grid.offsetX)/the_scale)*the_scale-world.grid.offsetX;
-			var the_y = Math.round((mouseY+world.grid.offsetY)/the_scale)*the_scale-world.grid.offsetY;
-			
-			cxt.save();
-			cxt.globalAlpha=0.6;
-			cxt.drawImage(current_item.img, 
-						the_x, 
-						the_y, 
-						the_w, 
-						the_h);
-			cxt.restore();
-		}
 
 		if(show_full_inventory){
 			var the_x = this.invslot_margin;
@@ -54,11 +52,10 @@ var inventory = {
 			var counter = 0;
 			var cur_row = 5;
 
-			inventory_slots = [];
 
-			for (var key in blockTypes){
-				if(blockTypes[key] != current_item){
-					var the_block = blockTypes[key];
+			for (var key in inventory_slots){
+				if(inventory_slots[key].type != current_item){
+					var the_block = inventory_slots[key].type;
 					var block_img = the_block.img;
 					var block_width = block_img.width;
 					var block_height = block_img.height;
@@ -76,14 +73,11 @@ var inventory = {
 							var the_x = (this.invslot_margin+((this.invslot_size-this.invslot_item_size)/2))+this.invslot_size*counter;
 							var the_y = (height-this.invslot_size*cur_row)+((this.invslot_size-the_h)/2)-this.invslot_margin;
 							
-							inventory_slots.push({
-								x: the_x,
-								y: the_y,
-								w: the_w,
-								h: the_h,
-								block: the_block,
-							});
-
+							inventory_slots[key].rect = {x:the_x, 
+															 y: the_y,
+															 w: the_w,
+															 h: the_h
+															};
 							cxt.drawImage(block_img, the_x, the_y,the_w,the_h);
 
 						}else{
@@ -92,14 +86,11 @@ var inventory = {
 							var the_x = (this.invslot_margin+((this.invslot_size-the_w)/2))+this.invslot_size*counter;
 							var the_y = (height-this.invslot_size*cur_row)+((this.invslot_size-the_h)/2)-this.invslot_margin;
 
-							inventory_slots.push({
-								x: the_x,
-								y: the_y,
-								w: the_w,
-								h: the_h,
-								block: the_block,
-							});
-
+							inventory_slots[key].rect = {x:the_x, 
+															 y: the_y,
+															 w: the_w,
+															 h: the_h
+															};
 							cxt.drawImage(block_img, the_x, the_y,the_w,the_h);
 						}
 					}else{
@@ -180,6 +171,7 @@ var inventory = {
 			  if(e.button == 0 || e.button == 1){
 			  	//left Click
 			  	for(var item in inventory_slots){
+			  		if(inventory_slots[item].type != current_item){
 			  		if(collision.intersects(
 			  		{
 			  			x: mouseX,
@@ -188,15 +180,15 @@ var inventory = {
 			  			h: 1,
 			  		},
 			  		{
-			  			x:inventory_slots[item].x,
-			  			y:inventory_slots[item].y,
-			  			w:inventory_slots[item].w,
-			  			h:inventory_slots[item].h,
+			  			x:inventory_slots[item].rect.x,
+			  			y:inventory_slots[item].rect.y,
+			  			w:inventory_slots[item].rect.w,
+			  			h:inventory_slots[item].rect.h,
 			  		}
 			  		)){
-			  			current_item = inventory_slots[item].block;
+			  			current_item = inventory_slots[item].type;
 			  			break;
-
+			  		}
 			  		}
 			  	}
 

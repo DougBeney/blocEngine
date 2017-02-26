@@ -26,22 +26,35 @@
 
 <canvas class="gamescreen" width="1280" height="720"></canvas>
 
-
-
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="assets/lib/exoro.js"></script>
-<script type="text/javascript" src="assets/lib/Box2D.js"></script>
-<script type="text/javascript" src="assets/lib/BP.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/menus/mainMenu.js"></script>
-<script type="text/javascript" src="js/world.js"></script>
-<script type="text/javascript" src="js/inventory.js"></script>
-<script type="text/javascript" src="js/blockTypes.js"></script>
-<script type="text/javascript" src="js/collision.js"></script>
-<script type="text/javascript" src="js/listener.js"></script>
-<script type="text/javascript" src="js/stateManager.js"></script>
+<script type="text/javascript" src="dist/itemTypes.js"></script>
+<script type="text/javascript" src="dist/blocEngine.js"></script>
+
+<script type="text/javascript" src="plugins/mainMenu.js"></script>
+<script type="text/javascript" src="plugins/worldeditor.js"></script>
+<script type="text/javascript" src="plugins/inventory.js"></script>
+
+<script type="text/javascript">
+	
+	mainMenu.addMenuItem({name:'>>Play',selected:false,x:20,y:290,w:305,h:60});
+	mainMenu.addMenuItem({name:'>>World-Editor',
+								state: [world, worldeditor, inventory],
+								x:20,
+								y:380,
+								w:705,
+								h:60});
+	mainMenu.addMenuItem({name:'>>Multiplayer',selected:false,x:20,y:470,w:660,h:60});
+	
+
+	blocEngine.init({
+		initial_state: [mainMenu],
+		gravity: 60,
+	});
+
+</script>
+
 
 <script type="text/javascript">
 
@@ -85,21 +98,23 @@
 			
 		}
 	}
+	
 
 	
 	$(function(){
 
+		
 		window.onresize = function(event) {
 		    resize();
 		};
 		
 
 		resize();
-
-		
-
+	
 	});
 
+
+	
 </script>
 
 </body>
