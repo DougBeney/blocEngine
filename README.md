@@ -1,31 +1,29 @@
 # BlocEngine
 
-Simple, fast, pixelated.
+Simple, fast, expandable.
 
 [Play this game](https://dougbeney.github.io/blocEngine/)
+
+## NEW
+
+- Added 'Play' mode with movable character
+- Split up this engine and added support for plugins
 
 ## TODO:
 
 - Make block deletion on left-mouse click work for rotated blocks
-- Make the itemTypes file a JSON instead of JS
 - Adding a save map feature
 - "Pause" menu
 - Settings menu
 - Convert images to spritesheet
-- Add more blocks
-- Adding a 'Play' mode
-	- Adding a player
+- ~~Adding a 'Play' mode~~ **Done**
+	- ~~Adding a player~~ **Done**
 - Add NPCs and animals
 - Add tools and props
 - Add guns
-- Add vehicles that can switch sides of road
+- Add vehicles
 - Adding Multiplayer mode
-- ~~Adding phyics~~
-- ~~URGENT Make zoom work in game~~
-
-
-**Ideas**
-
-- Raining Cats & Dogs (literally) mod
+- ~~Add physics~~ **Done**
+- ~~URGENT Make zoom work in game~~ **Done**
 
 ### [Project created by Doug Beney](https://dougbeney.com/)

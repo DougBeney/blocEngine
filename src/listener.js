@@ -9,6 +9,7 @@ var s_key = 83;
 var w_key = 87;
 var f_key = 70;
 var q_key = 81;
+var space = 32;
 var plus = 187;
 var minus = 189;
 var tilde = 192;

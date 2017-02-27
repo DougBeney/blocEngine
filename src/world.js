@@ -115,6 +115,12 @@ var world = {
         world.grid.dy = direction;
       }
     },
+    applyForceX: function(body, amount){
+      body.ApplyForce(new BP.Vec(amount,0), body.GetWorldCenter());
+    },
+    applyForceY: function(body, amount){
+      body.ApplyForce(new BP.Vec(0,amount), body.GetWorldCenter());
+    },
     zoom: function(amount){
       if(world.grid.zoom+amount <= 5 && world.grid.zoom+amount >= .4){
         world.grid.zoom += amount;

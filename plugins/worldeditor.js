@@ -66,8 +66,6 @@ var worldeditor = {
 			    world.cinematic_mode = !world.cinematic_mode;
 			    inventory.runEvent.toggleInventory(2);
 			    break;
-			  case escape_key:
-			    stateManager.setSequence([mainMenu]);
 			}
 		},
 		keyUp: function(e){
